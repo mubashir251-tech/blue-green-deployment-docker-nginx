@@ -1,0 +1,18 @@
+Lab 60: Blue-Green Deployment with Docker and NGINX
+Date: 2026-10-27 17:57:12 UTC
+
+=== Active environment ===
+green
+
+=== NGINX upstream ===
+    server green-app:3000;
+
+=== Application containers ===
+NAMES       STATUS
+blue-app    Up 41 seconds (healthy)
+green-app   Up 13 minutes (healthy)
+
+=== Health endpoint ===
+{"status": "healthy", "environment": "green", "uptime": 795.86}
+=== NGINX container status ===
+StartedAt=2026-10-27T17:46:10.889026453Z RestartCount=0

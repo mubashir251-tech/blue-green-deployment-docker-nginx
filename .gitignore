@@ -1,0 +1,6 @@
+
+# Runtime deployment state
+/state/
+
+# NGINX backup file
+/nginx/blue.conf.bak
